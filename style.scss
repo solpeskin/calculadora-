@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+    .convertidor {
+        display: flex;
+        flex-direction: column;
+        margin: 0 50px;
+
+        .select {
+            border-radius: 10px;
+            border: solid 1px rgb(197, 197, 197);
+            outline: none;
+            
+            color: rgb(22, 32, 174);
+        }
+        
+        .select-number {
+            width: 300px;
+            height: 40px;
+            padding: 5px;
+            font-size: 15px;
+        }
+
+        .show-selected {
+            width: 285px;
+            height: 28px;
+            padding: 5px 10px;
+            
+            p {
+                margin-top: 2%;
+                font-size: 15px;
+            }
+        }
+
+        .input {
+            outline: none;
+            width: 280px;
+            max-height: 200px;
+
+            margin-top: 20px;
+            padding-left: 20px;
+
+            border: none;
+            text-align: start;
+            font-size: 25px;
+        }
+
+        textarea {
+            resize:vertical;
+        }
+
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    }
+    
+}
